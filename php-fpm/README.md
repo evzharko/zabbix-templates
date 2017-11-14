@@ -56,8 +56,3 @@ Copy php-fpm-params.conf to /zabbix-agent/etc/zabbix_agentd.conf.d/. Restart Zab
 Import php-fpm-template.xml, and link it to a host. Set the host macro {$PHP_FPM_STATUS_URL} if needed.
 
 
-CREDITS
--------
-
-Some of the scripts are form http://github.com/zbal/zabbix.
-
