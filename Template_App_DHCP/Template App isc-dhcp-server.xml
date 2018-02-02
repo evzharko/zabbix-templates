@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2018-02-02T12:03:07Z</date>
+    <date>2018-02-02T15:58:15Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -45,13 +45,13 @@
             </applications>
             <items>
                 <item>
-                    <name>dhcp:DHCPACK</name>
+                    <name>dhcp pack</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPACK</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -88,13 +88,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPDECLINE</name>
+                    <name>dhcp decline</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPDECLINE</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -131,13 +131,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPDISCOVER</name>
+                    <name>dhcp discover</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPDISCOVER</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -174,13 +174,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPINFORM</name>
+                    <name>dhcp pinform</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPINFORM</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -217,13 +217,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPNAK</name>
+                    <name>dhcp nak</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPNAK</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -260,13 +260,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPOFFER</name>
+                    <name>dhcp offer</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPOFFER</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -303,13 +303,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPRELEASE</name>
+                    <name>dhcp release</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPRELEASE</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -346,13 +346,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>dhcp:DHCPREQUEST</name>
+                    <name>dhcp request</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>DHCPREQUEST</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
