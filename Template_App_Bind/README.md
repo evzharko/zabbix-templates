@@ -15,6 +15,6 @@ UserParameter=bind.net.udp,netstat -nua | grep :53 | wc -l
 # Количество tcp соединений к DNS:
 UserParameter=bind.net.tcp,netstat -nta | grep :53 | wc -l
 # Количество входящих и исходящих запросов:
-UserParameter=bind.queries.in[*],curl http://127.0.0.1:8053/ 2>/dev/null | xml2 | grep -A1 "/isc/bind/statistics/server/queries-in/rdtype/name=$1$" | tail -1 | cut -d= -f2
-UserParameter=bind.queries.out[*],curl http://127.0.00.1:8053/ 2>/dev/null | xml2 | grep -A1 "/isc/bind/statistics/views/view/rdtype/name=$1$" | tail -1 | cut -d= -f2
-UserParameter=bind.worksdig, dig google.com.ua @127.0.0.1 | grep -c "google.com.ua"
+* UserParameter=bind.queries.in[*],curl http://127.0.0.1:8053/ 2>/dev/null | xml2 | grep -A1 "/isc/bind/statistics/server/queries-in/rdtype/name=$1$" | tail -1 | cut -d= -f2
+* UserParameter=bind.queries.out[*],curl http://127.0.00.1:8053/ 2>/dev/null | xml2 | grep -A1 "/isc/bind/statistics/views/view/rdtype/name=$1$" | tail -1 | cut -d= -f2
+* UserParameter=bind.worksdig, dig google.com.ua @127.0.0.1 | grep -c "google.com.ua"
