@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2018-02-02T15:58:15Z</date>
+    <date>2018-02-09T07:40:39Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -398,7 +398,7 @@
                     <delay>60</delay>
                     <history>90</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>2</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -444,7 +444,7 @@
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -625,7 +625,7 @@
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>b</units>
@@ -685,7 +685,7 @@
 {Template App isc-dhcp-server:log[/var/log/dhcpd.log,,,,skip,].count(60,&quot;ALERT&quot;,&quot;like&quot;)}&gt;0)</expression>
             <name>dhcp: dhcpd.log - ERROR message detected</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>3</priority>
             <description/>
             <type>0</type>
@@ -696,7 +696,7 @@
 {Template App isc-dhcp-server:log[/var/log/dhcpd.log,,,,skip,].count(300,&quot;peer holds all free leases&quot;,&quot;like&quot;)}&gt;5</expression>
             <name>dhcp: dhcpd.log - peer holds all free leases</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
@@ -707,7 +707,7 @@
 {Template App isc-dhcp-server:log[/var/log/dhcpd.log,,,,skip,].count(60,&quot;warning&quot;,&quot;like&quot;)}&gt;0</expression>
             <name>dhcp: dhcpd.log -WARNING message detected</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
@@ -719,7 +719,7 @@
 {Template App isc-dhcp-server:vfs.file.size[/var/log/dhcpd.log].time()}&lt;{$ROTATETIMEDOWN})</expression>
             <name>dhcp: dhcpd.log size decreases</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
@@ -752,6 +752,16 @@
             <status>0</status>
             <priority>1</priority>
             <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template App isc-dhcp-server:DHCPREQUEST.last(,60)}=0</expression>
+            <name>dhcp request not running {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>DHCP не выдает ip-адреса</description>
             <type>0</type>
             <dependencies/>
         </trigger>
